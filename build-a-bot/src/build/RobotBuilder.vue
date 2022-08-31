@@ -183,7 +183,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped >
 .part {
   position: relative;
   width: 165px;
@@ -191,8 +191,10 @@ export default {
   border: 3px solid #aaa;
 }
 
-.part img {
-  width: 165px;
+.part {
+  img {
+    width: 165px;
+  }
 }
 
 .top-row {
@@ -301,6 +303,7 @@ export default {
 
 .sale {
   color: red;
+  font-weight: bolder;
 }
 
 .content {
@@ -324,5 +327,10 @@ th {
 
 .cost {
   text-align: right;
+}
+
+.main {
+  background: linear-gradient(to bottom, black, #555);
+  background-attachment: fixed;
 }
 </style>

@@ -3,15 +3,15 @@
     <nav>
       <ul>
         <li class="nav-item">
-          <img class="logo" src="./assets/build-a-bot-logo.png"/>
+          <img class="logo" src="./assets/build-a-bot-logo.png" />
           Build-a-Bot
         </li>
       </ul>
     </nav>
   </header>
- <main>
-  <RobotBuilder/>
- </main>
+  <main>
+    <RobotBuilder />
+  </main>
 
 </template>
 
@@ -28,13 +28,17 @@ export default {
 </script>
 
 <style>
-  body {
-    background: linear-gradient(to bottom, black, #555);
-    background-attachment: fixed;
-  }
+body {
+  background: linear-gradient(to bottom, black, #555);
+  background-attachment: fixed;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+</style>
+
+<style scoped>
 main {
   margin: 0 auto;
   padding: 30px;
@@ -49,16 +53,19 @@ header {
   width: 1084px;
   margin: 0 auto;
 }
+
 ul {
   padding: 3px;
   display: flex;
 }
+
 .nav-item {
   display: inline-block;
   padding: 5px 10px;
   font-size: 22px;
   border-right: 1px solid #bbb;
 }
+
 .logo {
   vertical-align: middle;
   height: 30px;
