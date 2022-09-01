@@ -18,7 +18,20 @@
     return incrementedIndex > length - 1 ? 0 : incrementedIndex;
   }
   export default {
-    props: ['parts', 'position'],
+    props:
+    {
+ parts: {
+        type: Array,
+        required: true,
+       },
+        position: {
+        type: String,
+        required: true,
+        validator(value) {
+            return ['left', 'right', 'top', 'bottom', 'center'].includes(value);
+        },
+    },
+},
     data() {
       return { selectedPartIndex: 0 };
     },
