@@ -40,8 +40,18 @@
         return this.parts[this.selectedPartIndex];
       },
     },
+    // here is where the images are being created em update in the preview
+    created() {
+      this.emitSelectedPart();
+    },
+    updated() {
+      this.emitSelectedPart();
+    },
     methods: {
-      selectNextPart() {
+        emitSelectedPart() {
+            this.$emit('partSelected', this.selectedPart);
+        },
+        selectNextPart() {
         this.selectedPartIndex = getNextValidIndex(
           this.selectedPartIndex,
           this.parts.length,
