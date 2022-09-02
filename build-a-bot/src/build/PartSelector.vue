@@ -8,7 +8,6 @@
   </template>
 
   <script>
-
   function getPreviousValidIndex(index, length) {
     const deprecatedIndex = index - 1;
     return deprecatedIndex < 0 ? length - 1 : deprecatedIndex;
@@ -40,7 +39,7 @@
         return this.parts[this.selectedPartIndex];
       },
     },
-    // here is where the images are being created em update in the preview
+    // here is where the images are being created and update in the preview
     created() {
       this.emitSelectedPart();
     },
