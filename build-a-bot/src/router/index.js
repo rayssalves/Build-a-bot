@@ -11,7 +11,7 @@ name: 'Home',
 component: HomePage,
 }, {
     path: '/build',
-    name: 'build',
+    name: 'Build',
     component: RobotBuilder,
     }],
 });
