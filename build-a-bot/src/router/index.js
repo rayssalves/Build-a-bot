@@ -18,5 +18,6 @@ component: HomePage,
         path: '/parts/:partType/:id',
         name: 'Parts',
         component: PartInfo,
+        props: true,
         }],
 });
