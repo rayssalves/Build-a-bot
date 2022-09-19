@@ -112,7 +112,7 @@ export default {
         + robot.rightArm.cost
         + robot.base.cost;
       // eslint-disable-next-line prefer-object-spread
-      this.cart.push(Object.assign({}, robot, { cost }));
+      this.$store.commit('addRobotToCart', {}, robot, { cost });
       this.addedToCart = true;
       },
     },
