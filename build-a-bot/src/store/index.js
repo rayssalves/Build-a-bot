@@ -7,7 +7,7 @@ export default createStore({
 // all changes must go though a mutation
     mutations: {
         addRobotToCart(state, robot) {
-        state.cart.push(robot);
+            state.cart.push(robot);
         },
     },
 });
