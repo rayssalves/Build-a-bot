@@ -88,7 +88,7 @@ export default {
   mixins: [createdHookMixin],
   computed: {
     availableParts() {
-      return this.$store.state.parts;
+      return this.$store.state.robots.parts;
     },
   },
   methods: {
@@ -100,7 +100,8 @@ export default {
         + robot.rightArm.cost
         + robot.base.cost;
       // eslint-disable-next-line prefer-object-spread
-      this.$store.dispatch('addRobotToCart', { ...robot, cost });
+      this.$store.dispatch('addRobotToCart', { ...robot, cost })
+        .then(() => this.$router.push('/cart'));
       this.addedToCart = true;
       },
     },
